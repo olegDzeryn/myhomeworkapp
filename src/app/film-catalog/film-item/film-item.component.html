@@ -1,0 +1,33 @@
+<mat-card class="example-card">
+  <img mat-card-image src='{{film.imgUrl}}'>
+  <mat-card-header class="example-discription">
+    <mat-card-title>{{film.name}}</mat-card-title>
+    <mat-card-title>{{film.id}}</mat-card-title>
+    <mat-card-title>{{numberChildren}}</mat-card-title>
+    <p>
+      {{film.description}}
+    </p>
+
+  </mat-card-header>
+
+  <mat-card-actions>
+    <!-- <input [value]="setNumberFilm{}" >-->
+    <button mat-button (click)="setToParent()">{{chois}}</button>
+  </mat-card-actions>
+</mat-card>
+<!--(click)="setToParent()"-->
+<!--<mat-card class="example-card">
+  <img mat-card-image src='{{film.imgUrl}}'>
+  <mat-card-header class="example-discription">
+    <mat-card-title>{{film.name}}</mat-card-title>
+    <mat-card-title>{{film.id}}</mat-card-title>
+    <p>
+      {{film.description}}
+    </p>
+
+  </mat-card-header>
+
+  <mat-card-actions>
+    <button mat-button>Добавить в избранное</button>
+  </mat-card-actions>
+</mat-card>-->
